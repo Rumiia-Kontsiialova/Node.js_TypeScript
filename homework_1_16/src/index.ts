@@ -83,3 +83,15 @@ const student : Student = {
 
 printStudentInfo(student);
 
+
+// Задание 6
+// Функция с типом `void`
+// Напишите функцию `logMessage`, которая принимает строку 
+// и выводит её в консоль без возвращаемого значения. Используйте тип `void`.
+
+function logMessage(msg : string) : void {
+    console.log(msg)
+}
+
+logMessage('Hello');
+
