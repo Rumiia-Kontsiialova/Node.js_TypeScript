@@ -52,3 +52,11 @@ console.log(squareNumber(7));
 // Типизация функции с boolean
 // Напишите функцию `isEven`, которая принимает число и возвращает `true`, 
 // если число четное, и `false`, если нечетное. Используйте строгую типизацию.
+
+function isEven(num: number) : boolean {
+    return num % 2 === 0;
+}
+
+console.log(isEven(12));
+console.log(isEven(21));
+
