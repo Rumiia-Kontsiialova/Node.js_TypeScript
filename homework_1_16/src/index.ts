@@ -60,3 +60,26 @@ function isEven(num: number) : boolean {
 console.log(isEven(12));
 console.log(isEven(21));
 
+// Задание 5
+// Создание интерфейса для объекта
+// Создайте интерфейс `Student`, который описывает студента с полями `name` (строка) и `grade` (число).
+// Напишите функцию `printStudentInfo`, которая принимает объект типа `Student` 
+// и выводит информацию о студенте в формате: `"Студент: <name>, Оценка: <grade>"`.
+
+interface Student {
+    name: string;
+    grade: number;
+}
+
+function printStudentInfo(student: Student) : void {
+    console.log(`Student: ${student.name}`);
+    console.log(`Grade: ${student.grade}`);
+}
+
+const student : Student = {
+    name: 'John',
+    grade: 1,
+}
+
+printStudentInfo(student);
+

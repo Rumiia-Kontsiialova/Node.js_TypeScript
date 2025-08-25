@@ -36,3 +36,12 @@ function isEven(num) {
 }
 console.log(isEven(12));
 console.log(isEven(21));
+function printStudentInfo(student) {
+    console.log("Student: ".concat(student.name));
+    console.log("Grade: ".concat(student.grade));
+}
+var student = {
+    name: 'John',
+    grade: 1,
+};
+printStudentInfo(student);
