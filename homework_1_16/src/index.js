@@ -19,3 +19,11 @@ var newPerson = {
     city: 'Magdeburg',
 };
 printPersonInfo(newPerson);
+// Задание 3
+// Простая типизация для числового параметра
+// Напишите функцию `squareNumber`, которая принимает число и возвращает его квадрат. 
+// Используйте строгую типизацию.
+function squareNumber(numb) {
+    return numb * numb;
+}
+console.log(squareNumber(7));
