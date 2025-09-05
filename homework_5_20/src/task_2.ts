@@ -5,3 +5,22 @@
 // В классе также должен быть метод `addBook()`, который увеличивает счетчик книг.
 // Создайте несколько объектов класса и проверьте, как изменяется общее количество книг.
 
+class Library {
+  // статическое свойство для всех экземпляров
+  static totalBooks: number = 0;
+
+  // метод для добавления книги
+  addBook() {
+    Library.totalBooks++; // увеличиваем общий счётчик
+  }
+}
+
+// Проверка
+const lib1 = new Library();
+const lib2 = new Library();
+
+lib1.addBook(); // +1
+lib2.addBook(); // +1
+lib1.addBook(); // +1
+
+console.log(Library.totalBooks); //  выведет всю сумму, т.е. 3
