@@ -6,6 +6,7 @@
 // В файле `main.ts` импортируйте эти функции и протестируйте их на примерах строк.
 export function capitalize(str) {
     return str ? str.charAt(0).toUpperCase() + str.slice(1) : ""; // оператор ?: вместо отдельного if.
+    // str[0] такая запись невозможна из-за строгого режима TYPESCRIPT, поэтому использую charAt(0) всегда возвращает строку (пусть даже пустую), поэтому ошибки не будет.
 }
 export function reverseString(str) {
     return str.split("").reverse().join("");
