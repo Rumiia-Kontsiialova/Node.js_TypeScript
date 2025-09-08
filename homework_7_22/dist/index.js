@@ -14,13 +14,21 @@
 // console.log("Сумма налога:", tax.getTaxAmount().toFixed(2));
 // task 3
 import { UserManagement } from './userManagement.js';
-// Создаём администратора
-const admin = new UserManagement.Admin.AdminUser("Иван Иванов", "ivan@example.com");
-console.log(admin.getInfo()); // Имя: Иван Иванов, Email: ivan@example.com, Супер-админ: false
-// Повышаем до супер-админа
-admin.promoteToSuperAdmin();
-console.log(admin.getInfo()); // Имя: Иван Иванов, Email: ivan@example.com, Супер-админ: true
-// Снимаем права супер-админа
-admin.demoteFromSuperAdmin();
-console.log(admin.getInfo()); // Имя: Иван Иванов, Email: ivan@example.com, Супер-админ: false
+// // Создаём администратора
+// const admin = new UserManagement.Admin.AdminUser('John Johnson', 'john@example.com');
+// console.log(admin.getInfo()); // Имя: John Johnson, Email: john@example.com, Супер-админ: false
+// // Повышаем до супер-админа
+// admin.promoteToSuperAdmin();
+// console.log(admin.getInfo()); // Имя: John Johnson, Email: john@example.com, Супер-админ: true
+// // Снимаем права супер-админа
+// admin.demoteFromSuperAdmin();
+// console.log(admin.getInfo()); // Имя: John Johnson, Email: john@example.com, Супер-админ: false
+// task 4
+import { generateFibonacci, generatePrimeNumbers } from './sequenceUtils.js';
+// Пример: Фибоначчи до 50
+const fib50 = generateFibonacci(50);
+console.log("Фибоначчи до 50:", fib50);
+// Пример: Простые числа до 30
+const primes30 = generatePrimeNumbers(30);
+console.log("Простые числа до 30:", primes30);
 //# sourceMappingURL=index.js.map
